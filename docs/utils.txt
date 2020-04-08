@@ -1,0 +1,8 @@
+sequelize-cli model:generate --name Account --attributes firstName:string,lastName:string,email:string,telephone:string,category:integer,contractType:string,contractStartDate:date,contractEndDate:date
+
+sequelize model:generate --name Pharmacy --attributes name:string,address:string,email:string,telephone:string,GroupId:integer
+
+sequelize model:generate --name Group --attributes name:string,address:string,email:string,telephone:string
+
+
+sequelize db:migrate:undo:all

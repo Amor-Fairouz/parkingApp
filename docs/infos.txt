@@ -1,0 +1,29 @@
+#secrets
+secrets.tokenEncryptionKey must be 32 characters
+
+#role
+role starts from 1, 0 is reserved for future use
+
+#log levels
+error: something that really needs a fix | console,file,email
+warn: a function error, front-end input data malformed, a non expected behaviour, so something that does not really needs a fix | console,file,email
+info: an information to application managers, does not require maintainers attention | console,file,email
+verbose: something needs to be printed to the console and log file but not email | console,file
+debug: something needs to be printed to the console only | console
+
+#preferences
+preferences.js is designed to minimize code modifications for new projects
+
+#log
+http://127.0.0.1:3007/log
+by default
+from: today
+until: today
+limit: 1000
+order: desc
+
+#logging
+route: req.originalUrl is needed only when logging a warn or error to include it in the email, but it doesnt hurt if its written in non warn or error log
+
+#routes
+router.delete is reserved to destroy from DB, use router.put for isDeleted = true
