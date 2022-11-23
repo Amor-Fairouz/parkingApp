@@ -37,7 +37,7 @@
     "rimraf": "^3.0.0",
     "sequelize": "^5.15.0",
     "sequelize-cli": "^5.5.0",
-    "socket.io": "^2.2.0",
+    "socket.io": "^2.5.0",
     "winston": "^3.2.1"
   }
 }
